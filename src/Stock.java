@@ -1,18 +1,33 @@
 public class Stock {
 
-    String name;
-    int numberOfShare;
-    int sharePrice;
-    int value;
+    private String name;
+    private int numberOfShare;
+    private int sharePrice;
+    private int value;
 
     Stock(String name, int numberOfShare, int sharePrice){
         this.name=name;
         this.numberOfShare=numberOfShare;
         this.sharePrice=sharePrice;
-        computeTotalValue();
     }
 
-    public void computeTotalValue(){
-        value=numberOfShare*sharePrice;
+    public String getName(){
+        return name;
+    }
+
+    public int getNumberOfShare() {
+        return numberOfShare;
+    }
+
+    public int getSharePrice() {
+        return sharePrice;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 }

@@ -9,13 +9,17 @@ public class StockPortfolio {
     public static void printStockReport() {
         System.out.println("Stock Report : ");
         for (Stock stock : list) {
-            System.out.println("Name : " + stock.name);
-            System.out.println("Number of share : " + stock.numberOfShare);
-            System.out.println("Share price : " + stock.sharePrice);
-            System.out.println("Value : " + stock.value);
+            System.out.println("Name : " + stock.getName());
+            System.out.println("Number of share : " + stock.getNumberOfShare());
+            System.out.println("Share price : " + stock.getSharePrice());
+            System.out.println("Value : " + stock.getValue());
             System.out.println();
         }
         System.out.println("Total value of all stocks : " + totalValue);
+    }
+
+    public static void computeValue(Stock stock){
+        stock.setValue(stock.getNumberOfShare()*stock.getSharePrice());
     }
 
     public static void main(String[] args) {
@@ -35,7 +39,8 @@ public class StockPortfolio {
             sc.nextLine();
             Stock stock = new Stock(name, noOfShare, sharePrice);
             list.add(stock);
-            totalValue += stock.value;
+            computeValue(stock);
+            totalValue += stock.getValue();
             System.out.println();
         }
         printStockReport();
