@@ -4,10 +4,10 @@ import java.util.HashSet;
 
 public class DeckOfCards {
 
-    static HashSet<Integer> set = new HashSet<>();
-    static CustomQueue<Player> playerQueue = new CustomQueue<Player>();
+    HashSet<Integer> set = new HashSet<>();
+    CustomQueue<Player> playerQueue = new CustomQueue<Player>();
 
-    public static void distributeCards() {
+    public  void distributeCards() {
         for (int i = 0; i < 4; i++) {
             Player player = new Player();
             for (int j = 0; j < 9; j++) {
@@ -25,7 +25,7 @@ public class DeckOfCards {
         }
     }
 
-    public static void printDetails() {
+    public  void printDetails() {
         final int SPADES = 0;
         final int CLUBS = 1;
         final int DIAMONDS = 2;
@@ -67,7 +67,8 @@ public class DeckOfCards {
     }
 
     public static void main(String[] args) {
-        distributeCards();
-        printDetails();
+        DeckOfCards game=new DeckOfCards();
+        game.distributeCards();
+        game.printDetails();
     }
 }
