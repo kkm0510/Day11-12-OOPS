@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef212e9d-9b9e-4534-adc7-fbcb0a68d4ee" name="Changes" comment="ADDED : classes for stock management">
+      <change afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockPortfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockPortfolio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678068890607</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="REFACTORED : code for single responsibility">
+      <created>1678071829922</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678071829924</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,6 +79,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADDED : classes for stock management" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADDED : classes for stock management" />
+    <MESSAGE value="REFACTORED : code for single responsibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTORED : code for single responsibility" />
   </component>
 </project>
